@@ -12,12 +12,13 @@ if ($n == 2) {
 do {
     if ($n % $firstNumber == 0) {
         echo "Not simple";
+        $flag = false;
         break;
     } else {
         $firstNumber++;
         $flag = true;
     }
-} while (pow($firstNumber, 2) < $n);
+} while (pow($firstNumber, 2) <= $n);
 
 if ($flag) {
     echo "Simple";

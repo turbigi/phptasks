@@ -29,7 +29,7 @@ function checkSimple($number)
             $firstNumber++;
             $flag = true;
         }
-    } while (pow($firstNumber, 2) < $number);
+    } while (pow($firstNumber, 2) <= $number);
 
     if ($flag) {
         return true;
